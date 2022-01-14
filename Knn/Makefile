@@ -2,13 +2,11 @@ CC?=gcc
 CFLAGS?=-Wextra -Wall -pedantic -std=c99 -g
 LDFLAGS?=-lm
 
-all: knn-bruteforce knn-svg knn-kdtree knn-genpoints
+all: knn-bruteforce knn-svg knn-genpoints
 
 knn-bruteforce: knn-bruteforce.o bruteforce.o io.o util.o
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-knn-kdtree: knn-kdtree.o bruteforce.o io.o util.o kdtree.o sort.o
-	$(CC) -o $@ $^ $(LDFLAGS)
 
 knn-genpoints: knn-genpoints.o io.o
 	$(CC) -o $@ $^ $(LDFLAGS)

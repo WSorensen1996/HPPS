@@ -1,6 +1,5 @@
 #include "io.h"
 #include "util.h"
-#include "kdtree.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -138,13 +137,7 @@ int main(int argc, char** argv) {
     draw_queries(size, d, points, argv[2], argv[3]);
   }
 
-  // Maybe compute KD-tree and draw it.
-  int draw_kdtree = 0;
-  if (draw_kdtree) {
-    struct kdtree *kdtree = kdtree_create(d, n_points, points);
-    kdtree_svg(size, stdout, kdtree);
-    kdtree_free(kdtree);
-  }
+
 
   printf("</svg>\n");
 

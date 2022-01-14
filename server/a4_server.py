@@ -312,7 +312,6 @@ CONNECTION_WILL_CLOSE = False
 MODIFIED_SINCE_DATE = None 
 
 
-
 if __name__ == "__main__":
     SERVER_IP, SERVER_PORT, PATH = server_address() 
     receive_from_client()

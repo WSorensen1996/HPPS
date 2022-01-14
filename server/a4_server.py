@@ -1,4 +1,3 @@
-
 ################################################################################################
 import socket
 import os
@@ -302,8 +301,6 @@ def server_address():
     return (SERVER_IP,SERVER_PORT, PATH) 
 
 
-
-
 MSG_MAX_SIZE = 512
 ACCEPTED_REQUEST_HEADERS = ["Accept:", "If-Modified-Since:", "Connection:",  "Host:"]
 ACCEPTED_REQUEST_HEADERS_FUNCS = [accept, if_Modified_Since, connection, host]
@@ -317,12 +314,6 @@ MODIFIED_SINCE_DATE = None
 
 
 if __name__ == "__main__":
-    
-    #SERVER_IP = "127.0.0.1"                         # ---- VARIABLE NEEDS TO BE DELETED BEFORE ASSIGNMENT IS TURNED IN
-    #SERVER_PORT = 1234                              # ---- VARIABLE NEEDS TO BE DELETED BEFORE ASSIGNMENT IS TURNED IN
-    #PATH = "/Users/williamsorensen/Desktop/4-e-1"   # ---- VARIABLE NEEDS TO BE DELETED BEFORE ASSIGNMENT IS TURNED IN
-    
-    #SERVER_IP, SERVER_PORT, PATH = server_address() # ---- NEEDS TO BE UNCOMMENTED
     SERVER_IP, SERVER_PORT, PATH = server_address() 
     receive_from_client()
     

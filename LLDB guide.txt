@@ -1,0 +1,6 @@
+		
+
+
+LLDB guide 
+https://www.nesono.com/sites/default/files/lldb%20cheat%20sheet.pdfcommand link lldb ”filnavn”
+r ”argumenter” Fejl angivet ’q’ for quit 
